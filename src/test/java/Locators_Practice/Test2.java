@@ -1,0 +1,7 @@
+package Locators_Practice;
+
+public class Test2 {
+	public static void main(String[] args) {
+		
+	}
+}
