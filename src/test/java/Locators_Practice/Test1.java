@@ -45,7 +45,12 @@ public class Test1 {
 		//wait
 		Thread.sleep(2000);
 		
-		driver.quit();
+		//driver.quit();
+		
+		
+		
+		
+		
 		
 		
 		
@@ -57,6 +62,12 @@ public class Test1 {
 	
 	}
 }
+
+
+
+
+
+
 
 
 
