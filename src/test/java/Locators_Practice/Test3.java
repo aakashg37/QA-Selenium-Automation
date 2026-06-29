@@ -30,7 +30,17 @@ public class Test3 {
 		driver.findElement(By.cssSelector("input#text-input-where")).sendKeys("Bangalore");
 		
 		//wait for 3 sec
-		Thread.sleep(3000);
+		Thread.sleep(2000);
+		
+		
+		driver.findElement(By.cssSelector("input#text-input-where")).clear();
+		
+		//wait for 3 sec
+		Thread.sleep(2000);
+		
+		
+		driver.findElement(By.cssSelector("input#text-input-where")).sendKeys("Mumbai");
+		
 		
 		//click on the find jobs button
 		driver.findElement(By.cssSelector("button.yosegi-InlineWhatWhere-primaryButton")).click();
