@@ -2,10 +2,11 @@ package WebElement;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 
-public class Test3 {	
-	
+public class Test5 {
+
 	public static void main(String[] args) {
 		
 		//launch the browser
@@ -14,9 +15,11 @@ public class Test3 {
 		//enter the url
 		driver.get("https://testautomationpractice.blogspot.com/");
 		
-		//get the text of web page using getText() present in WebElement(I)
-		//which return the String and stored it into a text variable
-		String text=driver.findElement(By.xpath("//a[text()='Data Entry Form']")).getText();
+		//Identify an element
+		WebElement s1=driver.findElement(By.xpath("//a[text()='Data Entry Form']"));
+		
+		//get the String from identified WebElement using getText()
+		String text=s1.getText();
 		
 		//print the text into console
 		System.out.println(text);
@@ -24,5 +27,10 @@ public class Test3 {
 		//quit the browser
 		driver.quit();
 	}
-
+	
 }
+
+
+
+
+
