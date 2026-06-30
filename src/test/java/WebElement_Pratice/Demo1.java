@@ -31,7 +31,7 @@ public class Demo1 {
 		
 		location.sendKeys("Bangalore");
 		
-		Thread.sleep(2000);
+		Thread.sleep(3000);
 		
 		//search.click();
 		
@@ -40,7 +40,7 @@ public class Demo1 {
 		//navigate back to home page
 		//driver.navigate().back();
 		
-		//click on search button
+		//click on search button on results page
 		//driver.findElement(By.cssSelector("button.nI-gNb-sb__icon-wrapper")).click();
 		
 		//Thread.sleep(1000);
@@ -57,6 +57,13 @@ public class Demo1 {
 		Thread.sleep(2000);
 		
 		search.click();
+		
+		Thread.sleep(2000);
+		
+		driver.navigate().back();
+		
+		
+		
 	}
 	
 }
