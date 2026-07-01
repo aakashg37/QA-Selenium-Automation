@@ -54,7 +54,13 @@ public class Demo1 {
 		designation.sendKeys("Automation Test Engineer");
 		location.sendKeys("Mumbai");
 		
-		Thread.sleep(2000);
+		Thread.sleep(1000);
+		
+		//verfiy that search button is enabled or not
+		boolean searchBtnStatus=search.isEnabled();
+		System.out.println(searchBtnStatus);
+		
+		Thread.sleep(1000);
 		
 		search.click();
 		
