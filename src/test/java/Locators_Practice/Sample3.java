@@ -21,25 +21,24 @@ public class Sample3 {
 		Thread.sleep(2000);
 		
 		//identify the search bar and search for Laptop
-				WebElement searchBar= driver.findElement(By.xpath("//input[contains(@placeholder,'Search for products,')]"));
+		WebElement searchBar= driver.findElement(By.xpath("//input[contains(@placeholder,'Search for products,')]"));
 				
-				WebElement search=driver.findElement(By.xpath("//a[@data-reactid='1040']"));
+		WebElement search=driver.findElement(By.xpath("//a[@data-reactid='1040']"));
 				
-				searchBar.sendKeys("Laptop");
-				search.click();
+		searchBar.sendKeys("Laptop");
+		search.click();
 				
-				Thread.sleep(3000);
-				driver.navigate().back();
-				Thread.sleep(2000);
+		Thread.sleep(3000);
+		driver.navigate().back();
+		Thread.sleep(2000);
 				
-				searchBar.clear();
-				Thread.sleep(1000);
-				searchBar.sendKeys("Mobile");
-				search.click();
+		searchBar.clear();
+		Thread.sleep(1000);
+		searchBar.sendKeys("Mobile");
+		search.click();		
 				
-				
-				Thread.sleep(3000);
-				driver.navigate().back();
+		Thread.sleep(3000);
+		driver.navigate().back();
 				
 		Thread.sleep(3000);
 		
