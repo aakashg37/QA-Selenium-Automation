@@ -8,7 +8,8 @@ public class Demo {
 	public static void main(String[] args) throws InterruptedException {
 
 		// open the browser: Chrome
-		WebDriver driver = new ChromeDriver();
+		ChromeDriver driver = new ChromeDriver();
+		
 
 		// open the url
 		driver.get("https://kite.zerodha.com/");
