@@ -59,7 +59,7 @@ public class Test1 {
 		selectViewAs.selectByVisibleText("List");
 		
 		//quit the browser
-		driver.quit();
+		//driver.quit();
 	}
 
 }
