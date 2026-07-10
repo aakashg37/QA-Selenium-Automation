@@ -21,6 +21,7 @@ public class Demo1 {
 		//switch to frame
 		driver.switchTo().frame("iframeResult");
 		
+		
 		//wait for 2 sec
 		Thread.sleep(2000);
 		
