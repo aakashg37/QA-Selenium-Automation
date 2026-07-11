@@ -27,7 +27,7 @@ public class Demo3 {
 		//get the text of the identified element
 		System.out.println("Text in the iframe is :"+ptag.getText());
 		
-		driver.quit();
+		//driver.quit();
 	}
 	
 	
