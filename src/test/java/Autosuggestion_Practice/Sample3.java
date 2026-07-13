@@ -12,6 +12,7 @@ import org.openqa.selenium.firefox.FirefoxDriver;
 public class Sample3 {
 	//not working
 	//it not taking all elements -->size 0 is giving
+	//pop-up of autosuggestion is not coming
 	public static void main(String[] args) throws InterruptedException {
 		
 		WebDriver driver=new EdgeDriver();

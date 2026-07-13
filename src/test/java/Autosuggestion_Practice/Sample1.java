@@ -8,6 +8,8 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 
 public class Sample1 {
+	//not working
+	//autosuggestion box is popuing up but for list div is not there ul is there
 	public static void main(String[] args) throws InterruptedException {
 		
 		WebDriver driver=new ChromeDriver();
@@ -15,6 +17,10 @@ public class Sample1 {
 		driver.get("https://www.flipkart.com/");
 		
 		driver.manage().window().maximize();
+		
+		Thread.sleep(2000);
+		
+		driver.findElement(By.xpath("//span[@class='b3wTlE']")).click();
 		
 		Thread.sleep(2000);
 		
@@ -26,9 +32,13 @@ public class Sample1 {
 		//identify all autosuggestions
 		//List<WebElement> Autosuggestions=driver.findElements(By.xpath("//ul[contains(@class,'VCplLH lTpUwR _1psv1ze5l _1psv1ze9l')]//li"));
 		
-		List<WebElement> Autosuggestions=driver.findElements(By.xpath("//div[@class='olwU0Z CXZSEo']//li"));
+		//List<WebElement> Autosuggestions=driver.findElements(By.xpath("//div[@class='olwU0Z CXZSEo']//li"));
 		
-		for(WebElement autosuggestion : Autosuggestions)
+		List<WebElement> asg=driver.findElements(By.xpath("//ul[@class='VCplLH lTpUwR _1psv1ze5l _1psv1ze9l _1psv1ze7c _1cisqlf2']//li"));
+		
+		System.out.println(asg.size());
+		
+		for(WebElement autosuggestion : asg)
 		{
 			String text=autosuggestion.getText();
 			//System.out.println("text: "+ text);			
