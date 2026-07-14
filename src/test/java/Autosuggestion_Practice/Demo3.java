@@ -6,13 +6,15 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
 
 public class Demo3 {
-	//not working
-		//it not taking all elements -->size 0 is giving
+	//working on Firefox
+	//earlier it was not working on Chrome
+	//prblm with chromeDriver was it was showing pop-up
 	public static void main(String[] args) throws InterruptedException {
 		
-		WebDriver driver=new ChromeDriver();
+		WebDriver driver=new FirefoxDriver();
 		
 		driver.get("https://www.ajio.com/");
 		
