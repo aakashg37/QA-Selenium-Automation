@@ -7,12 +7,13 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 
-public class Smaple3 {
-	//Find the cheapest product from a product grid.
+public class Practice {
 	public static void main(String[] args) throws InterruptedException {
 		
+		//launch the browser : Chrome
 		WebDriver driver=new ChromeDriver();
 		
+		//enter the url
 		driver.get("https://www.saucedemo.com/");
 		
 		driver.manage().window().maximize();
@@ -27,22 +28,38 @@ public class Smaple3 {
 		
 		driver.findElement(By.xpath("//input[@id='login-button']")).click();
 		
-		Thread.sleep(2000);
+		Thread.sleep(1000);
 		
 		driver.navigate().to("https://www.saucedemo.com/inventory.html");
 		
 		Thread.sleep(2000);
 		
 		//identify the price element and store it into a list 
-		List<WebElement> prices=driver.findElements(By.xpath("//div[@class='inventory_item_price']"));
+		//List<WebElement> prices=driver.findElements(By.xpath("//div[@class='inventory_item_price']"));
+		
+		//taking the list of whole products 
+		List<WebElement> products=driver.findElements(By.xpath("//div[@class='inventory_item']"));
+		
+		//System.out.println(products.size());
 		
 		Thread.sleep(2000);
 		
 		double cheapest = Double.MAX_VALUE;
 		
-		for(WebElement price : prices)
+		String cheapestProduct="";
+		
+		//extracting the each product one by one from the list of product
+		for(WebElement product : products)
 		{
-			String priceText=price.getText();
+			//identifying the productName
+			//String productName=product.findElement(By.xpath("//div[@class='inventory_item_name ']")).getText();
+			
+			String productName = product.findElement(By.className("inventory_item_name")).getText();
+			
+			//identifying the product price
+			//String priceText=product.findElement(By.xpath("//div[@class='inventory_item_price']")).getText();			
+			
+			String priceText = product.findElement(By.className("inventory_item_price")).getText();
 			
 			//removing the $ by using replace method and removing the spaces
 			priceText =priceText.replace("$", "").trim();
@@ -52,17 +69,13 @@ public class Smaple3 {
 			
 			if(amount < cheapest) {
 				cheapest=amount;
+				cheapestProduct=productName;
 			}
 			
 		}
 		System.out.println("Cheapest Amount is : $"+cheapest);
+		System.out.println("Cheapest Product Name is : "+cheapestProduct);
 		
 		driver.quit();
 	}
 }
-
-
-
-
-
-
