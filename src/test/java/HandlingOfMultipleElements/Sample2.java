@@ -31,7 +31,9 @@ public class Sample2 {
  getAttribute() 
  Get the value of the given attribute of the element. 
  Will return the current value, even if this has been modified after the page has been loaded.
+
  */
+
 
 
 
