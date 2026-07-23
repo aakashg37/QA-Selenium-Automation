@@ -25,6 +25,7 @@ public static void main(String[] args) throws InterruptedException {
 		
 		alt.sendKeys("Virat Kohli");
 		alt.accept();
+
 		
 		Thread.sleep(2000);
 		
