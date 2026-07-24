@@ -9,7 +9,8 @@ import org.openqa.selenium.chrome.ChromeDriver;
 
 public class Sample1 {
 	//not working
-	//autosuggestion box is popuing up but for list div is not there ul is there
+	//autosuggestion box pop-up is coming but for list div is not there ul is there
+	//using Actions class we can perform it
 	public static void main(String[] args) throws InterruptedException {
 		
 		WebDriver driver=new ChromeDriver();
@@ -27,7 +28,7 @@ public class Sample1 {
 		//identify the search bar and enter the input
 		driver.findElement(By.xpath("(//input[@name='q'])[1]")).sendKeys("Mobile");
 		
-		Thread.sleep(2000);
+		Thread.sleep(5000);
 		
 		//identify all autosuggestions
 		//List<WebElement> Autosuggestions=driver.findElements(By.xpath("//ul[contains(@class,'VCplLH lTpUwR _1psv1ze5l _1psv1ze9l')]//li"));
