@@ -31,7 +31,7 @@ public class Test1 {
 				
 				WebElement	row=driver.findElement(By.xpath("//table[@name='BookTable']//tr["+i+"]/td["+j+"]"));
 				
-				System.out.print(row.getText()+" - ");
+				System.out.print(row.getText()+"  ");
 			
 			}
 			System.out.println();
