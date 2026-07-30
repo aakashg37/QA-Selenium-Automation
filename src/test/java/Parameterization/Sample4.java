@@ -11,7 +11,7 @@ public class Sample4 {
 		
 		FileInputStream file=new FileInputStream("D:\\21stMarchFSST\\Parameterization.xlsx");
 		
-		boolean value=WorkbookFactory.create(file).getSheet("Sheet2").getRow(6).getCell(3).getBooleanCellValue();
+		boolean value=WorkbookFactory.create(file).getSheet("Sheet2").getRow(6).getCell(1).getBooleanCellValue();
 		
 		System.out.println(value);
 	}
