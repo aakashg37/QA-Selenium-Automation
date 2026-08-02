@@ -1,5 +1,6 @@
 package Parameterization;
 
+import java.io.File;
 import java.io.FileInputStream;
 import java.io.IOException;
 
@@ -8,10 +9,14 @@ import org.apache.poi.ss.usermodel.Sheet;
 import org.apache.poi.ss.usermodel.WorkbookFactory;
 import org.openqa.selenium.Alert;
 import org.openqa.selenium.By;
+import org.openqa.selenium.OutputType;
+import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.edge.EdgeDriver;
+
+import com.google.common.io.Files;
 
 public class Practice1 {
 
@@ -59,6 +64,11 @@ public class Practice1 {
 			driver.findElement(By.cssSelector("#password")).sendKeys(password);
 			System.out.println(" : password entered ->");
 			
+			Thread.sleep(2000);	
+			
+			//take Screenshot of Login Page with username
+			loginPageScreenshot(driver,username);
+			
 			Thread.sleep(2000);			
 			
 			//now login into account
@@ -77,7 +87,7 @@ public class Practice1 {
 			driver.findElement(By.cssSelector("#logout_sidebar_link")).click();
 			
 			//Thread.sleep(2000);
-			System.out.print("user -> "+ username+", logged out ! ");
+			System.out.println("user -> "+ username+", logged out ! ");
 			System.out.println("---------------------------------------------");
 		}
 						
@@ -90,6 +100,18 @@ public class Practice1 {
 		//driver.close();
 	}
 	
+	public static void loginPageScreenshot(WebDriver driver,String uname) throws IOException {
+		
+		TakesScreenshot scrt=(TakesScreenshot)driver;
+		
+		File source=scrt.getScreenshotAs(OutputType.FILE);
+		
+		File destination=new File("D:\\21stMarchFSST\\Screenshot\\"+uname+".png");
+		
+		Files.copy(source, destination);
+		
+		System.out.println("Screenshot taken for "+uname+" successfully !");
+	}
 	
 }
 
