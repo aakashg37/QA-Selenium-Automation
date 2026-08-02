@@ -11,7 +11,7 @@ public class Sample5 {
 	public static void main(String[] args) throws EncryptedDocumentException, IOException{
 		FileInputStream file=new FileInputStream("D:\\21stMarchFSST\\Parameterization.xlsx");
 	
-		int LastRowIndex = WorkbookFactory.create(file).getSheet("Sheet3").getLastRowNum()+1;
+		int LastRowIndex = WorkbookFactory.create(file).getSheet("Sheet3").getLastRowNum();
 	
 		System.out.println("Last Row Index : "+LastRowIndex);
 	
