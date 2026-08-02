@@ -26,8 +26,13 @@ public class Test2 {
 		
 		Thread.sleep(2000);
 		
+		driver.findElement(By.xpath("//a[contains(@class,'ui-datepicker-next')]")).click();
+		
+		Thread.sleep(2000);
+		
+		
 		//locate the date in the table and click on it
-		driver.findElement(By.xpath("//table[contains(@class,'ui-datepicker-calendar')]/tbody/tr[5]/td[6]")).click();
+		driver.findElement(By.xpath("//table[contains(@class,'ui-datepicker-calendar')]/tbody/tr[2]/td[2]")).click();
 		
 		Thread.sleep(2000);
 		
