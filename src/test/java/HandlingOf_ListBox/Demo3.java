@@ -19,6 +19,8 @@ public class Demo3 {
 		
 		Select color=new Select(colorDropdown);
 		
+		
+		
 		color.selectByIndex(0);
 		color.selectByIndex(1);
 		color.selectByIndex(2);
