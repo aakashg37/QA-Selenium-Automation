@@ -15,7 +15,7 @@ import com.google.common.io.Files;
 
 public class Sample2 {
 
-	static WebDriver driver;
+	WebDriver driver;
 	
 	@Test(priority=-1)
 	public void launchChromeBrowser() {
@@ -38,7 +38,7 @@ public class Sample2 {
 		TakesScreenshot ts=(TakesScreenshot)driver;
 		File source=ts.getScreenshotAs(OutputType.FILE);
 		
-		File destination=new File("D:\\21stMarchFSST\\Screenshot\\LoginZerodha.png");
+		File destination=new File("D:\\21stMarchFSST\\Screenshot\\LoginZerodha1.png");
 		
 		Files.copy(source, destination);
 		

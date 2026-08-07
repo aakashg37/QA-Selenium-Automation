@@ -3,12 +3,15 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="TestNG.Test11">
+      <class name="TestNGPractice.Sample3">
         <methods>
-          <include name="logout"/>
-          <include name="login"/>
+          <include name="openBrowser"/>
+          <include name="verifyRemoveToCart"/>
+          <include name="closeBrowser"/>
+          <include name="Login"/>
+          <include name="Logout"/>
         </methods>
-      </class> <!-- TestNG.Test11 -->
+      </class> <!-- TestNGPractice.Sample3 -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

@@ -2,92 +2,92 @@
 <testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
   <reporter-output>
     <line>
-      <![CDATA[Open Chrome Browser]]>
+      <![CDATA[open browser chrome]]>
     </line>
     <line>
-      <![CDATA[Login into app]]>
+      <![CDATA[Login into SauceDemo App]]>
     </line>
     <line>
-      <![CDATA[Running TC-1]]>
+      <![CDATA[Verified Add To Cart Button,by clicking on it.]]>
     </line>
     <line>
-      <![CDATA[Logout from app]]>
+      <![CDATA[Logout from SauceDemo App]]>
     </line>
     <line>
-      <![CDATA[Login into app]]>
+      <![CDATA[Login into SauceDemo App]]>
     </line>
     <line>
-      <![CDATA[Running TC-2]]>
+      <![CDATA[Verified Remove Button,by clicking on it.]]>
     </line>
     <line>
-      <![CDATA[Logout from app]]>
+      <![CDATA[Logout from SauceDemo App]]>
     </line>
     <line>
-      <![CDATA[Close Chrome Browser]]>
+      <![CDATA[closed chrome browser]]>
     </line>
   </reporter-output>
-  <suite started-at="2026-08-07T13:51:11 IST" name="Default suite" finished-at="2026-08-07T13:51:11 IST" duration-ms="124">
+  <suite started-at="2026-08-07T14:35:48 IST" name="Default suite" finished-at="2026-08-07T14:36:08 IST" duration-ms="20399">
     <groups>
     </groups>
-    <test started-at="2026-08-07T13:51:11 IST" name="Default test" finished-at="2026-08-07T13:51:11 IST" duration-ms="124">
-      <class name="TestNG.Demo1">
-        <test-method is-config="true" signature="openBrowser()[pri:0, instance:TestNG.Demo1@3c41ed1d]" started-at="2026-08-07T13:51:11 IST" name="openBrowser" finished-at="2026-08-07T13:51:11 IST" duration-ms="21" status="PASS">
+    <test started-at="2026-08-07T14:35:48 IST" name="Default test" finished-at="2026-08-07T14:36:08 IST" duration-ms="20399">
+      <class name="TestNGPractice.Sample3">
+        <test-method is-config="true" signature="openBrowser()[pri:0, instance:TestNGPractice.Sample3@22ff4249]" started-at="2026-08-07T14:35:48 IST" name="openBrowser" finished-at="2026-08-07T14:35:52 IST" duration-ms="4306" status="PASS">
           <reporter-output>
             <line>
-              <![CDATA[Open Chrome Browser]]>
+              <![CDATA[open browser chrome]]>
             </line>
           </reporter-output>
         </test-method> <!-- openBrowser -->
-        <test-method is-config="true" signature="Login()[pri:0, instance:TestNG.Demo1@3c41ed1d]" started-at="2026-08-07T13:51:11 IST" name="Login" finished-at="2026-08-07T13:51:11 IST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="Login()[pri:0, instance:TestNGPractice.Sample3@22ff4249]" started-at="2026-08-07T14:35:52 IST" name="Login" finished-at="2026-08-07T14:35:55 IST" duration-ms="2556" status="PASS">
           <reporter-output>
             <line>
-              <![CDATA[Login into app]]>
+              <![CDATA[Login into SauceDemo App]]>
             </line>
           </reporter-output>
         </test-method> <!-- Login -->
-        <test-method signature="TC1()[pri:0, instance:TestNG.Demo1@3c41ed1d]" started-at="2026-08-07T13:51:11 IST" name="TC1" finished-at="2026-08-07T13:51:11 IST" duration-ms="8" status="PASS">
+        <test-method signature="verifyAddToCart()[pri:0, instance:TestNGPractice.Sample3@22ff4249]" started-at="2026-08-07T14:35:55 IST" name="verifyAddToCart" finished-at="2026-08-07T14:35:55 IST" duration-ms="169" status="PASS">
           <reporter-output>
             <line>
-              <![CDATA[Running TC-1]]>
+              <![CDATA[Verified Add To Cart Button,by clicking on it.]]>
             </line>
           </reporter-output>
-        </test-method> <!-- TC1 -->
-        <test-method is-config="true" signature="Logout()[pri:0, instance:TestNG.Demo1@3c41ed1d]" started-at="2026-08-07T13:51:11 IST" name="Logout" finished-at="2026-08-07T13:51:11 IST" duration-ms="0" status="PASS">
+        </test-method> <!-- verifyAddToCart -->
+        <test-method is-config="true" signature="Logout()[pri:0, instance:TestNGPractice.Sample3@22ff4249]" started-at="2026-08-07T14:35:55 IST" name="Logout" finished-at="2026-08-07T14:35:58 IST" duration-ms="3454" status="PASS">
           <reporter-output>
             <line>
-              <![CDATA[Logout from app]]>
+              <![CDATA[Logout from SauceDemo App]]>
             </line>
           </reporter-output>
         </test-method> <!-- Logout -->
-        <test-method signature="TC2()[pri:0, instance:TestNG.Demo1@3c41ed1d]" started-at="2026-08-07T13:51:11 IST" name="TC2" finished-at="2026-08-07T13:51:11 IST" duration-ms="3" status="PASS">
+        <test-method is-config="true" signature="Login()[pri:0, instance:TestNGPractice.Sample3@22ff4249]" started-at="2026-08-07T14:35:58 IST" name="Login" finished-at="2026-08-07T14:36:01 IST" duration-ms="2752" status="PASS">
           <reporter-output>
             <line>
-              <![CDATA[Running TC-2]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- TC2 -->
-        <test-method is-config="true" signature="Login()[pri:0, instance:TestNG.Demo1@3c41ed1d]" started-at="2026-08-07T13:51:11 IST" name="Login" finished-at="2026-08-07T13:51:11 IST" duration-ms="0" status="PASS">
-          <reporter-output>
-            <line>
-              <![CDATA[Login into app]]>
+              <![CDATA[Login into SauceDemo App]]>
             </line>
           </reporter-output>
         </test-method> <!-- Login -->
-        <test-method is-config="true" signature="Logout()[pri:0, instance:TestNG.Demo1@3c41ed1d]" started-at="2026-08-07T13:51:11 IST" name="Logout" finished-at="2026-08-07T13:51:11 IST" duration-ms="1" status="PASS">
+        <test-method signature="verifyRemoveToCart()[pri:0, instance:TestNGPractice.Sample3@22ff4249]" started-at="2026-08-07T14:36:01 IST" name="verifyRemoveToCart" finished-at="2026-08-07T14:36:01 IST" duration-ms="123" status="PASS">
           <reporter-output>
             <line>
-              <![CDATA[Logout from app]]>
+              <![CDATA[Verified Remove Button,by clicking on it.]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- verifyRemoveToCart -->
+        <test-method is-config="true" signature="Logout()[pri:0, instance:TestNGPractice.Sample3@22ff4249]" started-at="2026-08-07T14:36:01 IST" name="Logout" finished-at="2026-08-07T14:36:05 IST" duration-ms="3461" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[Logout from SauceDemo App]]>
             </line>
           </reporter-output>
         </test-method> <!-- Logout -->
-        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:TestNG.Demo1@3c41ed1d]" started-at="2026-08-07T13:51:11 IST" name="closeBrowser" finished-at="2026-08-07T13:51:11 IST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:TestNGPractice.Sample3@22ff4249]" started-at="2026-08-07T14:36:05 IST" name="closeBrowser" finished-at="2026-08-07T14:36:08 IST" duration-ms="3464" status="PASS">
           <reporter-output>
             <line>
-              <![CDATA[Close Chrome Browser]]>
+              <![CDATA[closed chrome browser]]>
             </line>
           </reporter-output>
         </test-method> <!-- closeBrowser -->
-      </class> <!-- TestNG.Demo1 -->
+      </class> <!-- TestNGPractice.Sample3 -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

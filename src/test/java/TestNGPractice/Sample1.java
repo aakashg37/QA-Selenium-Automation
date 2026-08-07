@@ -8,7 +8,7 @@ import org.testng.annotations.Test;
 
 public class Sample1 {
 
-	static WebDriver driver;
+	WebDriver driver;
 	
 	@Test(priority=-1)
 	public void launchChromeBrowser() {
