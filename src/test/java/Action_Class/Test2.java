@@ -32,7 +32,7 @@ public class Test2 {
 		
 		//select entered name (CTRL + A)
 		action.keyDown(Keys.CONTROL).sendKeys("A").keyUp(Keys.CONTROL).perform();
-		
+					
 		Thread.sleep(1000);
 		
 		//copy entered name (CTRL + C)
