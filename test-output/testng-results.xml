@@ -1,32 +1,61 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="2" total="5" passed="3" failed="0" skipped="0">
+<testng-results ignored="0" total="7" passed="7" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2026-08-11T17:40:04 IST" name="Suite" finished-at="2026-08-11T17:40:11 IST" duration-ms="7222">
+  <suite started-at="2026-08-11T19:04:47 IST" name="Default suite" finished-at="2026-08-11T19:04:59 IST" duration-ms="12426">
     <groups>
+      <group name="Sanity">
+        <method signature="Test1.verifyHeadingDisplayed()[pri:2, instance:TestNGPractice.Test1@40a4337a]" name="verifyHeadingDisplayed" class="TestNGPractice.Test1"/>
+      </group> <!-- Sanity -->
       <group name="Regression">
-        <method signature="Group1.verifyHeading()[pri:0, instance:TestNG.Group1@5c6648b0]" name="verifyHeading" class="TestNG.Group1"/>
-        <method signature="Group1.verifyURL()[pri:0, instance:TestNG.Group1@5c6648b0]" name="verifyURL" class="TestNG.Group1"/>
-        <method signature="Group2.verifyLoginBtnEnabled()[pri:0, instance:TestNG.Group2@368f2016]" name="verifyLoginBtnEnabled" class="TestNG.Group2"/>
+        <method signature="Test1.verifyLogoDisplayed()[pri:2, instance:TestNGPractice.Test1@40a4337a]" name="verifyLogoDisplayed" class="TestNGPractice.Test1"/>
       </group> <!-- Regression -->
+      <group name="Smoke">
+        <method signature="Test1.verifyLoginPageOpen()[pri:-1, instance:TestNGPractice.Test1@40a4337a]" name="verifyLoginPageOpen" class="TestNGPractice.Test1"/>
+        <method signature="Test1.verifyLoginBtn()[pri:1, instance:TestNGPractice.Test1@40a4337a]" name="verifyLoginBtn" class="TestNGPractice.Test1"/>
+        <method signature="Test1.verifyPassField()[pri:1, instance:TestNGPractice.Test1@40a4337a]" name="verifyPassField" class="TestNGPractice.Test1"/>
+        <method signature="Test1.verifyUnameFiled()[pri:1, instance:TestNGPractice.Test1@40a4337a]" name="verifyUnameFiled" class="TestNGPractice.Test1"/>
+      </group> <!-- Smoke -->
     </groups>
-    <test started-at="2026-08-11T17:40:04 IST" name="Test" finished-at="2026-08-11T17:40:11 IST" duration-ms="7222">
-      <class name="TestNG.Group2">
-        <test-method signature="verifyLoginBtnEnabled()[pri:0, instance:TestNG.Group2@368f2016]" started-at="2026-08-11T17:40:09 IST" name="verifyLoginBtnEnabled" finished-at="2026-08-11T17:40:11 IST" duration-ms="2217" status="PASS">
+    <test started-at="2026-08-11T19:04:47 IST" name="Default test" finished-at="2026-08-11T19:04:59 IST" duration-ms="12426">
+      <class name="TestNGPractice.Test1">
+        <test-method is-config="true" signature="openBrowser()[pri:0, instance:TestNGPractice.Test1@40a4337a]" started-at="2026-08-11T19:04:47 IST" name="openBrowser" finished-at="2026-08-11T19:04:56 IST" duration-ms="9274" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- verifyLoginBtnEnabled -->
-      </class> <!-- TestNG.Group2 -->
-      <class name="TestNG.Group1">
-        <test-method signature="verifyHeading()[pri:0, instance:TestNG.Group1@5c6648b0]" started-at="2026-08-11T17:40:04 IST" name="verifyHeading" finished-at="2026-08-11T17:40:07 IST" duration-ms="2780" status="PASS">
+        </test-method> <!-- openBrowser -->
+        <test-method signature="verifyLoginPageOpen()[pri:-1, instance:TestNGPractice.Test1@40a4337a]" started-at="2026-08-11T19:04:56 IST" name="verifyLoginPageOpen" finished-at="2026-08-11T19:04:56 IST" duration-ms="60" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- verifyHeading -->
-        <test-method signature="verifyURL()[pri:0, instance:TestNG.Group1@5c6648b0]" started-at="2026-08-11T17:40:07 IST" name="verifyURL" finished-at="2026-08-11T17:40:09 IST" duration-ms="2169" status="PASS">
+        </test-method> <!-- verifyLoginPageOpen -->
+        <test-method signature="verifyLoginBtn()[pri:1, instance:TestNGPractice.Test1@40a4337a]" started-at="2026-08-11T19:04:56 IST" name="verifyLoginBtn" finished-at="2026-08-11T19:04:56 IST" duration-ms="88" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- verifyURL -->
-      </class> <!-- TestNG.Group1 -->
-    </test> <!-- Test -->
-  </suite> <!-- Suite -->
+        </test-method> <!-- verifyLoginBtn -->
+        <test-method signature="verifyPassField()[pri:1, instance:TestNGPractice.Test1@40a4337a]" started-at="2026-08-11T19:04:56 IST" name="verifyPassField" finished-at="2026-08-11T19:04:56 IST" duration-ms="79" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyPassField -->
+        <test-method signature="verifyUnameFiled()[pri:1, instance:TestNGPractice.Test1@40a4337a]" started-at="2026-08-11T19:04:56 IST" name="verifyUnameFiled" finished-at="2026-08-11T19:04:56 IST" duration-ms="65" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyUnameFiled -->
+        <test-method signature="verifyHeadingDisplayed()[pri:2, instance:TestNGPractice.Test1@40a4337a]" started-at="2026-08-11T19:04:56 IST" name="verifyHeadingDisplayed" finished-at="2026-08-11T19:04:56 IST" duration-ms="56" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyHeadingDisplayed -->
+        <test-method signature="verifyLogoDisplayed()[pri:2, instance:TestNGPractice.Test1@40a4337a]" started-at="2026-08-11T19:04:56 IST" name="verifyLogoDisplayed" finished-at="2026-08-11T19:04:56 IST" duration-ms="61" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyLogoDisplayed -->
+        <test-method signature="verifyTitle()[pri:2, instance:TestNGPractice.Test1@40a4337a]" started-at="2026-08-11T19:04:56 IST" name="verifyTitle" finished-at="2026-08-11T19:04:56 IST" duration-ms="22" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyTitle -->
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:TestNGPractice.Test1@40a4337a]" started-at="2026-08-11T19:04:56 IST" name="closeBrowser" finished-at="2026-08-11T19:04:59 IST" duration-ms="2493" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+      </class> <!-- TestNGPractice.Test1 -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>
