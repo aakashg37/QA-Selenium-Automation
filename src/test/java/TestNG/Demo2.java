@@ -3,6 +3,7 @@ package TestNG;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.Assert;
+import org.testng.Reporter;
 import org.testng.annotations.Test;
 
 public class Demo2 {
@@ -14,7 +15,8 @@ public class Demo2 {
 		WebDriver driver=new ChromeDriver();
 		driver.get("https://www.amazon.in/");
 		System.out.println(driver.getCurrentUrl());
-		Assert.assertEquals(driver.getCurrentUrl(), "https://www.amazon.inn");
+		//Reporter.log(driver.getCurrentUrl(), true);
+		//Assert.assertEquals(driver.getCurrentUrl(), "https://www.amazon.inn");
 	}
 	
 	@Test

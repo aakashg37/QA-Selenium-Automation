@@ -1,0 +1,15 @@
+
+<suite name="Suite">
+  <test thread-count="5" name="Test">
+  	<groups>
+  		<run>
+  			<include name="Regression" />
+  		</run>
+  	</groups>
+  
+    <classes>
+      <class name="TestNG.Group1"/>
+      <class name="TestNG.Group2"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->

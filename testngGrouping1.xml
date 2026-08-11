@@ -1,0 +1,14 @@
+
+<suite name="Suite">
+  <test name="Test">
+  <groups>
+  	<run>
+  		<include name="Smoke" />
+  		<include name="Regression" />
+  	</run>
+  </groups>
+    <classes>
+      <class name="TestNG.Group1"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
