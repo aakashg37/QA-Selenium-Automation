@@ -6,8 +6,11 @@
       <class name="TestNGPractice.Test1">
         <methods>
           <include name="openBrowser"/>
+          <include name="verifyLoginBtn"/>
           <include name="verifyHeadingDisplayed"/>
+          <include name="verifyLogoDisplayed"/>
           <include name="closeBrowser"/>
+          <include name="verifyTitle"/>
           <include name="verifyLoginPageOpen"/>
         </methods>
       </class> <!-- TestNGPractice.Test1 -->

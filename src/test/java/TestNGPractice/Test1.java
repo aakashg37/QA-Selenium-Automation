@@ -26,13 +26,13 @@ public class Test1 {
 		Assert.assertEquals(driver.getCurrentUrl(), "https://opensource-demo.orangehrmlive.com/web/index.php/auth/login");
 	}
 
-	@Test	(groups="Smoke",priority=1)
+	@Test	(groups="Smoke",priority=1, dependsOnMethods= {"verifyLoginPageOpen"})
 	public void verifyLoginBtn() {
 		boolean isBtnEnabled=driver.findElement(By.xpath("//button[@type='submit']")).isEnabled();
 		System.out.println("is Button Enabled ? :"+isBtnEnabled);
 	}
 	
-	@Test	(groups="Regression",priority=2)
+	@Test	(groups="Regression",priority=2, dependsOnMethods= {"verifyLoginPageOpen"})
 	public void verifyLogoDisplayed() {
 		boolean isLogoDisplayed=driver.findElement(By.xpath("//img[@alt='company-branding']")).isDisplayed();
 		System.out.println("is Logo Displayed? : "+isLogoDisplayed);
@@ -40,13 +40,13 @@ public class Test1 {
 	}
 	
 
-	@Test	(groups="Sanity",priority=2)
+	@Test	(groups="Sanity",priority=2, dependsOnMethods= {"verifyLoginPageOpen"})
 	public void verifyHeadingDisplayed() {
 		boolean isDisplayed=driver.findElement(By.xpath("//h5[text()='Login']")).isDisplayed();
 		Assert.assertEquals(isDisplayed, true);
 	}
 	
-	@Test	(priority=2)
+	@Test	(priority=2, dependsOnMethods= {"verifyLoginPageOpen"})
 	public void verifyTitle() {
 		Assert.assertEquals(driver.getTitle(), "OrangeHRM");
 	}
