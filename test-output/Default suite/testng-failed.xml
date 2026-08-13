@@ -3,17 +3,11 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="TestNGPractice.Test1">
+      <class name="TestNG.Sample5">
         <methods>
-          <include name="openBrowser"/>
-          <include name="verifyLoginBtn"/>
-          <include name="verifyHeadingDisplayed"/>
-          <include name="verifyLogoDisplayed"/>
-          <include name="closeBrowser"/>
-          <include name="verifyTitle"/>
-          <include name="verifyLoginPageOpen"/>
+          <include name="VerifyURL_Kite"/>
         </methods>
-      </class> <!-- TestNGPractice.Test1 -->
+      </class> <!-- TestNG.Sample5 -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
