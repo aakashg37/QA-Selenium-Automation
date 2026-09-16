@@ -18,6 +18,7 @@ public class Sample1 {
 		driver.get("https://www.ilovepdf.com/pdf_to_word");
 		driver.manage().window().maximize();
 		
+		//click on select pdf file button
 		driver.findElement(By.id("pickfiles")).click();
 		
 		//createobject of StringSelection class and pass the file path to its constructor
@@ -42,10 +43,8 @@ public class Sample1 {
 		//press enter key to upload the file
 		robot.keyPress(java.awt.event.KeyEvent.VK_ENTER);
 		robot.keyRelease(java.awt.event.KeyEvent.VK_ENTER);
-			
 		
 	}
-
 }
 
 
