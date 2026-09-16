@@ -1,0 +1,21 @@
+
+<suite name="Suite" parallel="tests">
+  <test  name="Test1">
+    <classes>
+      <class name="TestNG.Sample11"/>
+    </classes>
+  </test>
+    
+  <test  name="Test2">
+    <classes>
+      <class name="TestNG.Sample12"/>
+    </classes>
+ </test>
+    
+  <test  name="Test3">
+    <classes>
+       <class name="TestNG.Sample13"/>
+    </classes>
+  </test>
+     
+</suite> <!-- Suite -->

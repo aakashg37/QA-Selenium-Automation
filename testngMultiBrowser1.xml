@@ -1,0 +1,24 @@
+
+<suite name="Suite">
+  <test name="Test_Chrome">
+  	<parameter name="browserName" value="Chrome"/>
+    <classes>
+      <class name="TestNG.MultiBrowser_Testing"/>
+    </classes>
+  </test> <!-- Test -->
+  
+  <test name="Test_firefox">
+  	<parameter name="browserName" value="firefox"/>
+    <classes>
+      <class name="TestNG.MultiBrowser_Testing"/>
+    </classes>
+  </test> <!-- Test -->
+  
+  <test name="Test_Edge">
+  	<parameter name="browserName" value="Edge"/>
+    <classes>
+      <class name="TestNG.MultiBrowser_Testing"/>
+    </classes>
+  </test> <!-- Test -->
+  
+</suite> <!-- Suite -->
